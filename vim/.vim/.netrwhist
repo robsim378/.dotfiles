@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/etc/X11/xinit/xinitrc.d'
+let g:netrw_dirhist_7='/etc/X11/xinit'
+let g:netrw_dirhist_6='/home/robert/.gnupg'
+let g:netrw_dirhist_5='/home/robert/.local'
+let g:netrw_dirhist_4='/home/robert/.mozilla/firefox/nz05atd4.default-release'
+let g:netrw_dirhist_3='/home/robert/.config/i3'
+let g:netrw_dirhist_2='/etc/fonts/conf.d'
+let g:netrw_dirhist_1='/etc/pacman.d'
