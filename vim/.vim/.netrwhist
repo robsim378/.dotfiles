@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_2='/home/robert/system_info/commands'
 let g:netrw_dirhist_1='/home/robert/system_info'
 let g:netrw_dirhist_0='/home/robert/system_info/commands'
 let g:netrw_dirhist_9='/home/robert/.dotfiles/networkmanager-dmenu/.config/networkmanager-dmenu/config.ini'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_7='/etc/X11/xinit'
 let g:netrw_dirhist_6='/home/robert/.gnupg'
 let g:netrw_dirhist_5='/home/robert/.local'
 let g:netrw_dirhist_4='/home/robert/.mozilla/firefox/nz05atd4.default-release'
-let g:netrw_dirhist_3='/home/robert/.config/i3'
-let g:netrw_dirhist_2='/etc/fonts/conf.d'

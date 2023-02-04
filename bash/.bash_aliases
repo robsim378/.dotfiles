@@ -1,5 +1,17 @@
 ##### General Commands #####
 alias ls='ls --color=auto'
+alias ll='ls -l'
+alias lla='ls -la'
+alias la='ls -a'
+
+##### Brightness #####
+alias brightness_max='echo 7500 > /sys/class/backlight/intel_backlight/brightness'
+
+function brightness {
+	brightness_percent=$(echo $1/100 | bc -l)
+	new_brightness=$(echo $brightness_percent*7500 | bc -l)
+	echo ${new_brightness%.*} > /sys/class/backlight/intel_backlight/brightness
+}
 
 ##### Displays #####
 alias displayconfig='arandr'
@@ -8,7 +20,7 @@ alias displayconfig='arandr'
 alias audioconfig='pavucontrol'
 
 ##### Bluetooth #####
-alias bluetoothctl='bluetoothconfig'
+#alias bluetoothctl='bluetoothconfig'
 
 ##### Image Viewing #####
 alias feh='feh -F'
@@ -30,6 +42,7 @@ alias netconfig='printf "netlist: display networks\nnetconnect [SSID] [Password]
 alias networkconfig='netconfig'
 
 alias netlist='nmcli device wifi list'
+alias netgui='nm-connection-editor'
 
 function netconnect {
 	if [ $# -eq 1 ]; then
