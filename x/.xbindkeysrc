@@ -1,0 +1,27 @@
+# Increase volume
+"pamixer --increase 5; notify-send 'pamixer --get-volume' -t 200"
+	XF86AudioRaiseVolume
+
+# Decrease volume
+"pamixer --decrease 5; notify-send 'pamixer --get-volume' -t 200"
+	XF86AudioLowerVolume
+
+# Mute volume
+"pamixer --toggle-mute; notify-send 'pamixer --get-mute' -t 200"
+	XF86AudioMute
+
+# Increase brightness
+
+
+# Decrease brightness
+
+
+# Rewind
+
+
+# Play/pause
+
+
+# Fast forward
+
+

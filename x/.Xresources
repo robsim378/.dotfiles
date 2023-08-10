@@ -8,7 +8,7 @@
 *.foreground:	#d8dee9
 !i*.background:	#2e3440
 *.background: 	#13151a
-*.cursorColo:	#d8dee9
+*.cursorColor:	#d8dee9
 
 ! black
 !*.color0: 	#282a2e
