@@ -19,6 +19,9 @@ alias displayconfig='arandr'
 ##### Audio #####
 alias audioconfig='pavucontrol'
 
+##### vim to nvim #####
+alias vim='nvim'
+
 ##### Bluetooth #####
 #alias bluetoothctl='bluetoothconfig'
 

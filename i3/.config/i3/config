@@ -9,6 +9,24 @@
 # layout, use the i3-config-wizard
 #
 
+# Colors from xresources
+set_from_resource $black1 COLOR0 #000000
+set_from_resource $black2 COLOR8 #000000
+set_from_resource $red1 COLOR1 #000000
+set_from_resource $red2 COLOR8 #000000
+set_from_resource $green1 COLOR2 #000000
+set_from_resource $green2 COLOR10 #000000
+set_from_resource $yellow1 COLOR3 #000000
+set_from_resource $yellow2 COLOR11 #000000
+set_from_resource $blue1 COLOR4 #000000
+set_from_resource $blue2 COLOR12 #000000
+set_from_resource $purple1 COLOR5 #000000
+set_from_resource $purple2 COLOR13 #000000
+set_from_resource $cyan1 COLOR6 #000000
+set_from_resource $cyan2 COLOR14 #000000
+set_from_resource $white1 COLOR7 #000000
+set_from_resource $white2 COLOR15 #000000
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
@@ -34,6 +52,8 @@ exec --no-startup-id nm-applet
 
 exec_always --no-startup-id $HOME/.config/polybar/shapes/launch.sh
 
+exec --no-startup-id picom
+
 exec --no-startup-id flameshot
 
 exec --no-startup-id dunst
@@ -46,12 +66,18 @@ exec --no-startup-id dunst
 #bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # i3-gaps settings
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 gaps inner 5
-gaps outer 2
+gaps outer 0
+
+default_border pixel 0
+default_floating_border pixel 0
+hide_edge_borders none
+new_window pixel 0
+new_float pixel 0
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #3b4252 #3b4252 #3b4252 #3b4252   #3b4252
+client.focused          #3b4252 #3b4252 #3b4252   #3b4252
 client.focused_inactive #3b4252 #3b4252 #3b4252 #3b4252   #3b4252
 client.unfocused        #3b4252 #3b4252 #3b4252 #3b4252   #3b4252
 client.urgent           #3b4252 #3b4252 #3b4252 #3b4252   #3b4252

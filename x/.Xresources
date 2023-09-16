@@ -1,70 +1,71 @@
 !! Colorscheme
+#include "/home/robert/colors/iceberg"
 
 ! special
 !*.foreground: 	#d0d0d0
 !*.background: 	#101010
 !*.cursorColor: 	#d0d0d0
 
-*.foreground:	#d8dee9
+*.foreground:	FOREGROUND
 !i*.background:	#2e3440
-*.background: 	#13151a
-*.cursorColor:	#d8dee9
+*.background: 	BACKGROUND
+*.cursorColor:	FOREGROUND
 
 ! black
 !*.color0: 	#282a2e
 !*.color8: 	#373b41
 
-*.color0:	#2b4252
-*.color8:	#4c566a
+*.color0:	COLOR0
+*.color8:	COLOR8
 
 ! red
 !*.color1: 	#a54242
 !*.color9: 	#cc6666
 
-*.color1:	#bf616a
-*.color9:	#bf616a
+*.color1:	COLOR1
+*.color9:	COLOR9
 
 ! green
 !*.color2: 	#8c9440
 !*.color10: 	#b5bd68
 
-*.color2:	#a3be8c
-*.color10:	#a3be8c
+*.color2:	COLOR2
+*.color10:	COLOR10
 
 ! yellow
 !*.color3: 	#de935f
 !*.color11: 	#f0c674
 
-*.color3:	#ebcb8b
-*.color11:	#ebcb8b
+*.color3:	COLOR3
+*.color11:	COLOR11
 
 ! blue
 !*.color4: 	#5f819d
 !*.color12: 	#81a2be
 
-*.color4:	#81a1c1
-*.color12:	#81a1c1
+*.color4:	COLOR4
+*.color12:	COLOR12
 
 ! magenta
 !*.color5: 	#85678f
 !*.color13: 	#b294bb
 
-*.color5:	#b48ead
-*.color13:	#b48ead
+*.color5:	COLOR5
+*.color13:	COLOR13
 
 ! cyan
 !*.color6: 	#5e8d87
 !*.color14: 	#8abeb7
 
-*.color6:	#88c0d0
-*.color14:	#8fbcbb
+*.color6:	COLOR6
+*.color14:	COLOR14
 
 ! white
 !*.color7: 	#969896
 !*.color15: 	#c5c8c6
 
-*.color7:	#e5e9f0
-*.color15:	#eceff8
+*.color7:	COLOR7
+*.color15:	COLOR15
 
 !! URxvt Appearance
 URxvt.title: 		urxvt

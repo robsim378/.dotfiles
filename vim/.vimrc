@@ -1,6 +1,20 @@
 " Enable filetype detection
 filetype plugin indent on
 
+call plug#begin(stdpath('data') . '/plugged')
+Plug 'itchyny/lightline.vim'
+Plug 'gkeep/iceberg-dark'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'oahlen/iceberg.nvim'
+call plug#end()
+
+let g:lightline = { 'colorscheme': 'icebergDark' }
+
+set background=dark
+colorscheme iceberg
+
+
+
 " ##### Visual Settings ##### {{{       
 
 " Turn syntax highlighting on
