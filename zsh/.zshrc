@@ -27,4 +27,10 @@ hexapod_start(){
 	source install/setup.zsh
 }
 
-# eval "$(starship init bash)"
+precmd() {
+	precmd() {
+		echo
+	}
+}
+
+eval "$(starship init zsh)"
