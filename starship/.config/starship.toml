@@ -1,3 +1,6 @@
 format = '$all'
 
 add_newline = false
+
+[cmd_duration]
+disabled = true
