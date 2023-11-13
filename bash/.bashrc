@@ -18,6 +18,7 @@ ros2_start(){
 }
 
 hexapod_start(){
+	ros2_start
 	cd /home/robert/projects/hexapod
 	source install/setup.bash
 }

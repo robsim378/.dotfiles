@@ -38,7 +38,9 @@ function preview {
 }
 
 ##### Carleton University VPN #####
-alias cuconnect='sudo openconnect cuvpn.carleton.ca'
+alias cuconnect='OPENSSL_CONF=$HOME/.config/openssl/openssl.conf openconnect-sso --server cuvpn.carleton.ca/mfa'
+
+alias lanebox='ssh -p 20002 lane@avp-1.sce.carleton.ca'
 
 ##### Networking Replacements #####
 alias netconfig='printf "netlist: display networks\nnetconnect [SSID] [Password]: connect to network\nnetdelete [SSID]: delete connection\n"'
