@@ -19,6 +19,7 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
+Plug 'codota/tabnine-nvim', { 'do': './dl_binaries.sh' }
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.3' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 Plug 'max397574/better-escape.nvim'

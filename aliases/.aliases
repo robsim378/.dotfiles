@@ -22,6 +22,9 @@ alias audioconfig='pavucontrol'
 ##### vim to nvim #####
 alias vim='nvim'
 
+##### pinta to paint #####
+alias pinta='paint'
+
 ##### Bluetooth #####
 #alias bluetoothctl='bluetoothconfig'
 

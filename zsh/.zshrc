@@ -13,6 +13,16 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Home key
+bindkey	"^[[H"	beginning-of-line
+# CTRL+A
+bindkey	"^A"	beginning-of-line
+# End key
+bindkey	"^[[F"	end-of-line
+# CTRL+B
+bindkey	"^B"	end-of-line
+# Delete key
+bindkey	"^[[3~"	delete-char
 
 source $HOME/.aliases
 
