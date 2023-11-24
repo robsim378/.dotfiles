@@ -33,6 +33,8 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 
 
+Plug 'tveskag/nvim-blame-line'
+
 Plug 'windwp/nvim-autopairs'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
@@ -62,6 +64,9 @@ endif
 call plug#end()
 
 lua require('plugins')
+
+" Enable git blame line
+autocmd BufEnter * EnableBlameLine
 
 " Lightline colorscheme
 let g:lightline = { 'colorscheme': 'icebergDark' }
