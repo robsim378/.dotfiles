@@ -21,7 +21,7 @@ require('tabnine').setup({
 
 
 -- Set up lspconfig.
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
 
 -- Set up LSP language servers
@@ -155,7 +155,7 @@ cmp.setup.cmdline(':', {
 require("Comment").setup()
 require("nvim-autopairs").setup()
 
-require("nvim-treesitter").setup({
+require("nvim-treesitter.configs").setup({
 	highlight = {
 		enable = true,
 		additional_vim_regex_highlighting = false,
@@ -195,6 +195,7 @@ local function nvim_tree_on_attach(bufnr)
 	vim.keymap.set('n', '<Leader>t', api.tree.change_root_to_node, opts('CD'))
 end
 
+
 require("nvim-tree").setup({
 	sort_by = "case_sensitive",
 	view = {
@@ -207,6 +208,9 @@ require("nvim-tree").setup({
 		dotfiles = false,
 	},
 	on_attach = nvim_tree_on_attach,
+	update_focused_file = {
+		enable = true,
+	}
 })
 
 
