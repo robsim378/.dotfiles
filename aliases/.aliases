@@ -4,6 +4,8 @@ alias ll='ls -l'
 alias lla='ls -la'
 alias la='ls -a'
 
+alias cppwd='pwd | xclip -selection c'
+
 ##### Brightness #####
 alias brightness_max='echo 7500 > /sys/class/backlight/intel_backlight/brightness'
 

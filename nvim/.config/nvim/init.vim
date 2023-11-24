@@ -3,6 +3,7 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 source ~/.vimrc
 
 call plug#begin(stdpath('data') . '/plugged')
+
 Plug 'itchyny/lightline.vim'
 Plug 'gkeep/iceberg-dark'
 Plug 'lukas-reineke/indent-blankline.nvim'
@@ -14,6 +15,25 @@ Plug 'petertriho/nvim-scrollbar'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'kevinhwang91/nvim-hlslens'
 Plug 'gelguy/wilder.nvim'
+
+" CMP
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+" follow latest release and install jsregexp.
+Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'} " Replace <CurrentMajor> by the latest released major (first number of latest release)
+Plug 'rafamadriz/friendly-snippets'
+Plug 'saadparwaiz1/cmp_luasnip'
+
+" LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+
+
+
 Plug 'windwp/nvim-autopairs'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
