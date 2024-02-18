@@ -4,6 +4,10 @@ source ~/.vimrc
 
 call plug#begin(stdpath('data') . '/plugged')
 
+" ROS and ROS2
+Plug 'tadachs/ros-nvim'
+" Latex stuff
+Plug 'lervag/vimtex'
 " Status line
 Plug 'itchyny/lightline.vim'
 " Colorscheme
@@ -80,6 +84,10 @@ endif
 call plug#end()
 
 lua require('plugins')
+
+set encoding=utf-8
+
+filetype plugin on
 
 " Enable git blame line
 autocmd BufEnter * EnableBlameLine

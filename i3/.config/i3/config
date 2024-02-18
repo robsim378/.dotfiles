@@ -110,7 +110,7 @@ bindsym Mod4+Shift+q kill
 
 # lock screen
 # Need to modify /etc/systemd/system/i3lock.service as well
-bindsym Mod4+Ctrl+Shift+l exec --no-startup-id i3lock --indicator --image=/home/robert/Pictures/wallpapers/mountains_nord_lock.png --ignore-empty-password --inside-color=2e344000 --ring-color=d8dee9a0 --insidever-color=2e344000 --ringver-color=88c0d0a0 --insidewrong-color=2e344000 --ringwrong-color=bf616aa0 --keyhl-color=88c0d0a0 --bshl-color=bf616aa0 --verif-text="" --wrong-text="" --noinput-text="" 
+bindsym Mod4+Ctrl+Shift+l exec --no-startup-id i3lock --indicator --image=/home/robert/Pictures/Wallpapers/Widescreen/mountains_nord_lock.png --ignore-empty-password --inside-color=2e344000 --ring-color=d8dee9a0 --insidever-color=2e344000 --ringver-color=88c0d0a0 --insidewrong-color=2e344000 --ringwrong-color=bf616aa0 --keyhl-color=88c0d0a0 --bshl-color=bf616aa0 --verif-text="" --wrong-text="" --noinput-text="" 
 
 # start dmenu (a program launcher)
 bindsym Mod4+space exec rofi -show run

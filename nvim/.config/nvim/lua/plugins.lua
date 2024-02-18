@@ -5,6 +5,7 @@ require("scrollbar.handlers.search").setup({
 })
 require('gitsigns').setup()
 require('hlslens').setup()
+require('ros-nvim').setup({only_workspace = true})
 
 require("ibl").setup()
 
@@ -54,6 +55,7 @@ require('mason-lspconfig').setup({
 	  "taplo",						-- TOML
 	  "lemminx",					-- XML
 	  "yamlls",						-- YAML
+	  "texlab"						-- LaTeX
   },
   handlers = {default_setup},
 })

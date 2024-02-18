@@ -15,17 +15,21 @@ function brightness {
 	echo ${new_brightness%.*} > /sys/class/backlight/intel_backlight/brightness
 }
 
+##### Access my vps #####
+alias vpsconnect='ssh -L 9090:localhost:8384 -i ~/.ssh/robert-vps_key ubuntu@150.230.30.8'
+
 ##### Displays #####
 alias displayconfig='arandr'
 
 ##### Audio #####
 alias audioconfig='pavucontrol'
+alias mknoise='pacat /dev/urandom'
 
 ##### vim to nvim #####
 alias vim='nvim'
 
 ##### pinta to paint #####
-alias pinta='paint'
+alias paint='pinta'
 
 ##### Bluetooth #####
 #alias bluetoothctl='bluetoothconfig'
