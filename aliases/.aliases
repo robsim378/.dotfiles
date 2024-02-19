@@ -10,8 +10,8 @@ alias cppwd='pwd | xclip -selection c'
 alias brightness_max='echo 7500 > /sys/class/backlight/intel_backlight/brightness'
 
 function brightness {
-	brightness_percent=$(echo $1/100 | bc -l)
-	new_brightness=$(echo $brightness_percent*7500 | bc -l)
+	brightness_percent=$(echo "$1/100" | bc -l)
+	new_brightness=$(echo "$brightness_percent*7500" | bc -l)
 	echo ${new_brightness%.*} > /sys/class/backlight/intel_backlight/brightness
 }
 
