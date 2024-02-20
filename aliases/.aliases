@@ -1,9 +1,10 @@
 ##### General Commands #####
 alias ls='ls --color=auto'
-alias ll='ls -l'
-alias lla='ls -la'
-alias la='ls -a'
+alias ll='eza -lgF --group-directories-first --time-style=long-iso --git'
+alias lla='eza -algF --group-directories-first --time-style=long-iso --git'
+alias la='eza -agF --group-directories-first --time-style=long-iso --git'
 
+##### Copy pwd #####
 alias cppwd='pwd | xclip -selection c'
 
 ##### Brightness #####
@@ -17,6 +18,9 @@ function brightness {
 
 ##### Access my vps #####
 alias vpsconnect='ssh -L 9090:localhost:8384 -i ~/.ssh/robert-vps_key ubuntu@150.230.30.8'
+
+##### Update the APOD. Useful if the cron job runs while I don't have internet #####
+alias update_apod='python3 ~/bin/apod_scraper.py'
 
 ##### Displays #####
 alias displayconfig='arandr'

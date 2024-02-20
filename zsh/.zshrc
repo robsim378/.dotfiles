@@ -9,6 +9,8 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/robert/.zshrc'
 
+export PATH=$PATH:/home/robert/bin
+
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
@@ -25,6 +27,8 @@ bindkey	"^B"	end-of-line
 bindkey	"^[[3~"	delete-char
 
 source $HOME/.aliases
+# Set LS_COLORS environment variable, it's required for zsh suggestions to be colored.
+source $HOME/.config/colors/ls_colors
 
 ros2_start(){
 	source /opt/ros/humble/setup.zsh
@@ -43,4 +47,14 @@ precmd() {
 	}
 }
 
+zmodload zsh/complist
+source /home/robert/.config/zsh/completion.zsh
+
+
 eval "$(starship init zsh)"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Show the APOD
+apod -ti
+echo
+# cat ~/bin/apod_scraper_results/description.txt
