@@ -34,10 +34,13 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
+# Set default cursor
+xsetroot -cursor_name left_ptr
+
 ~/.fehbg &
 picom &
 # xmodmap ~/.Xmodmap
 xbindkeys
-exec i3
+# exec i3
 
-# exec bspwm
+exec bspwm
