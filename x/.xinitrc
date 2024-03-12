@@ -34,6 +34,9 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
+# Set monitor configuration
+~/.config/screen_configuration.sh
+
 # Set default cursor
 xsetroot -cursor_name left_ptr
 

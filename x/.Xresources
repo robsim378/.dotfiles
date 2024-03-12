@@ -42,7 +42,7 @@
 *.color15:	COLOR15
 
 ! Display scaling
-Xft.dpi: 	130
+Xft.dpi: 	110
 Xft.antialias: 	true
 
 ! Cursor settings
