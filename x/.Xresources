@@ -1,94 +1,44 @@
 !! Colorscheme
 #include "/home/robert/colors/iceberg"
 
-! special
-!*.foreground: 	#d0d0d0
-!*.background: 	#101010
-!*.cursorColor: 	#d0d0d0
+! These all refer to the included color file, allowing for quick swapping between color schemes.
 
+! special
 *.foreground:	FOREGROUND
-!i*.background:	#2e3440
 *.background: 	BACKGROUND
 *.cursorColor:	FOREGROUND
 
 ! black
-!*.color0: 	#282a2e
-!*.color8: 	#373b41
-
 *.color0:	COLOR0
 *.color8:	COLOR8
 
 ! red
-!*.color1: 	#a54242
-!*.color9: 	#cc6666
-
 *.color1:	COLOR1
 *.color9:	COLOR9
 
 ! green
-!*.color2: 	#8c9440
-!*.color10: 	#b5bd68
-
 *.color2:	COLOR2
 *.color10:	COLOR10
 
 ! yellow
-!*.color3: 	#de935f
-!*.color11: 	#f0c674
-
 *.color3:	COLOR3
 *.color11:	COLOR11
 
 ! blue
-!*.color4: 	#5f819d
-!*.color12: 	#81a2be
-
 *.color4:	COLOR4
 *.color12:	COLOR12
 
 ! magenta
-!*.color5: 	#85678f
-!*.color13: 	#b294bb
-
 *.color5:	COLOR5
 *.color13:	COLOR13
 
 ! cyan
-!*.color6: 	#5e8d87
-!*.color14: 	#8abeb7
-
 *.color6:	COLOR6
 *.color14:	COLOR14
 
 ! white
-!*.color7: 	#969896
-!*.color15: 	#c5c8c6
-
 *.color7:	COLOR7
 *.color15:	COLOR15
-
-!! URxvt Appearance
-URxvt.title: 		urxvt
-URxvt.cursorBlink: 	true
-URxvt.font: 	xft: Iosevka: pixelsize=18
-
-! Keybinds
-URxvt.keysym.Control-Up: 	\003[1;5A
-URxvt.keysym.Control-Down: 	\003[1;5B
-URxvt.keysym.Control-Right: 	\003[1;5C
-URxvt.keysym.Control-Left: 	\003[1;5D
-
-URxvt.letterSpace: 	1
-URxvt.lineSpace: 	0
-URxvt.geometry: 	92x24
-URxvt.internalBorder: 	5
-URxvt.cursorUnderline: 	false
-URxvt.saveline: 	2048
-URxvt.scrollBar: 	false
-URxvt.scrollBar_right: 	false
-URxvt.urgentOnBell: 	true
-URxvt.depth: 		24
-URxvt.iso14755: 	false
 
 ! Display scaling
 Xft.dpi: 	130
