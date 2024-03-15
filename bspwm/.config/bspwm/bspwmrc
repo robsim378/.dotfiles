@@ -14,9 +14,9 @@ bspc config left_padding 			0
 bspc config right_padding 			0
 
 # Colors
-bspc config normal_border_color 	#000000
-bspc config active_border_color 	#ffffff
-bspc config focused_border_color 	#ffffff
+bspc config normal_border_color 	$(xrdb -query | grep "inactiveBorderColor" | cut -f 2)
+bspc config active_border_color 	$(xrdb -query | grep "activeBorderColor" | cut -f 2)
+bspc config focused_border_color 	$(xrdb -query | grep "focusedBorderColor" | cut -f 2)
 
 # Misc settings
 bspc config click_to_focus 			true
@@ -29,7 +29,7 @@ bspc config gapless_monocle      	true
 
 # Startup background apps
 nm-applet &
-picom &
+picom --frame-opacity $(xrdb -query | grep "borderOpacity" | cut -f 2) &
 flameshot &
 dunst &
 $HOME/.config/polybar/shapes/launch.sh &

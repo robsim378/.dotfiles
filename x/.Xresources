@@ -7,12 +7,13 @@
 *.foreground:	FOREGROUND
 *.background: 	BACKGROUND
 *.cursorColor:	FOREGROUND
-*.borderColor:	FOREGROUND
+*.activeBorderColor:	FOREGROUND
+*.inactiveBorderColor:	BACKGROUND
+*.focusedBorderColor:	BACKGROUND
 
 ! Opacity of various things
 *.backgroundOpacity:	15
-*.activeBorderOpacity:	50
-*.inactiveBorderOpacity:	15
+*.borderOpacity:	1
 
 ! Various colors
 ! black
