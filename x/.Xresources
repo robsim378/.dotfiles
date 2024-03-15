@@ -3,39 +3,39 @@
 
 ! These all refer to the included color file, allowing for quick swapping between color schemes.
 
-! special
+! Special colors
 *.foreground:	FOREGROUND
 *.background: 	BACKGROUND
 *.cursorColor:	FOREGROUND
+*.borderColor:	FOREGROUND
 
+! Opacity of various things
+*.backgroundOpacity:	15
+*.activeBorderOpacity:	50
+*.inactiveBorderOpacity:	15
+
+! Various colors
 ! black
 *.color0:	COLOR0
 *.color8:	COLOR8
-
 ! red
 *.color1:	COLOR1
 *.color9:	COLOR9
-
 ! green
 *.color2:	COLOR2
 *.color10:	COLOR10
-
 ! yellow
 *.color3:	COLOR3
 *.color11:	COLOR11
-
 ! blue
 *.color4:	COLOR4
 *.color12:	COLOR12
-
 ! magenta
 *.color5:	COLOR5
 *.color13:	COLOR13
-
 ! cyan
 *.color6:	COLOR6
 *.color14:	COLOR14
-
 ! white
 *.color7:	COLOR7
 *.color15:	COLOR15
@@ -43,3 +43,7 @@
 ! Display scaling
 Xft.dpi: 	130
 Xft.antialias: 	true
+
+! Cursor settings
+Xcursor.theme: Breeze_Snow
+Xcursor.size: 16
