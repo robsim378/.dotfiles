@@ -4,6 +4,9 @@ alias ll='eza -lgF --group-directories-first --time-style=long-iso --git'
 alias lla='eza -algF --group-directories-first --time-style=long-iso --git'
 alias la='eza -agF --group-directories-first --time-style=long-iso --git'
 
+##### Skip all prompts when using yay #####
+alias yay='yay --noconfirm --answerdiff=None --answeredit=None'
+
 ##### Copy pwd #####
 alias cppwd='pwd | xclip -selection c'
 
@@ -57,6 +60,7 @@ alias dotfiles_install='stow /*'
 ##### Carleton University VPN #####
 alias cuconnect='OPENSSL_CONF=$HOME/.config/openssl/openssl.conf openconnect-sso --server cuvpn.carleton.ca/mfa'
 
+##### Connect to sim box on carleton vpn #####
 alias lanebox='ssh -p 20002 lane@avp-1.sce.carleton.ca'
 
 ##### Networking Replacements #####
