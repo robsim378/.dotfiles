@@ -22,9 +22,6 @@ function brightness {
 ##### Access my vps #####
 alias vpsconnect='ssh -L 9090:localhost:8384 -i ~/.ssh/robert-vps_key ubuntu@150.230.30.8'
 
-##### Update the APOD. Useful if the cron job runs while I don't have internet #####
-alias update_apod='python3 ~/bin/apod_scraper.py'
-
 ##### Displays #####
 alias displayconfig='arandr'
 
@@ -57,11 +54,10 @@ function preview {
 alias dotfiles_link='stow --adopt -vt ~ *'
 alias dotfiles_install='stow /*'
 
-##### Carleton University VPN #####
+##### Carleton University stuff #####
 alias cuconnect='OPENSSL_CONF=$HOME/.config/openssl/openssl.conf openconnect-sso --server cuvpn.carleton.ca/mfa'
-
-##### Connect to sim box on carleton vpn #####
 alias lanebox='ssh -p 20002 lane@avp-1.sce.carleton.ca'
+alias harold='ssh hiwonder@192.168.149.1'
 
 ##### Networking Replacements #####
 alias netconfig='printf "netlist: display networks\nnetconnect [SSID] [Password]: connect to network\nnetdelete [SSID]: delete connection\n"'
