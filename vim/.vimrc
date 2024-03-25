@@ -1,7 +1,17 @@
 " Enable filetype detection
 filetype plugin indent on
 
+" Use just one clipboard for the whole system
 set clipboard=unnamedplus
+
+" Wrap lines
+set wrap
+
+" Wrap lines only on linebreak
+set linebreak 
+
+" When wrapping lines, add an indent.
+set breakindent
 
 
 " ##### Visual Settings ##### {{{       
