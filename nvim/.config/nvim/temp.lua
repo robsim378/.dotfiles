@@ -6,8 +6,11 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/config/nvim/plugged')
 
-Plug 'itchyny/lightline.vim'
+-- Colorschemes
 Plug 'gkeep/iceberg-dark'
+Plug 'srcery-colors/srcery-vim'
+
+Plug 'itchyny/lightline.vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'oahlen/iceberg.nvim'
 Plug 'junegunn/vim-slash'
