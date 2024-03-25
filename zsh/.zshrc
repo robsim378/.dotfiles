@@ -50,6 +50,7 @@ precmd() {
 zmodload zsh/complist
 source /home/robert/.config/zsh/completion.zsh
 
+(cat ~/.cache/wal/sequences &)
 
 eval "$(starship init zsh)"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
