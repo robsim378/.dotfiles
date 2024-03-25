@@ -13,6 +13,14 @@ Plug 'itchyny/lightline.vim'
 " Colorscheme
 Plug 'gkeep/iceberg-dark'
 Plug 'oahlen/iceberg.nvim'
+Plug 'srcery-colors/srcery-vim'
+Plug 'sainnhe/gruvbox-material'
+Plug 'davidosomething/vim-colors-meh'
+Plug 'loctvl842/monokai-pro.nvim'
+Plug 'sainnhe/sonokai'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'luisiacc/gruvbox-baby'
+Plug 'ellisonleao/gruvbox.nvim'
 " Indentation lines
 Plug 'lukas-reineke/indent-blankline.nvim'
 " Dependency of something I think
@@ -87,6 +95,7 @@ lua require('plugins')
 
 set encoding=utf-8
 
+
 filetype plugin on
 
 " Enable git blame line
@@ -96,11 +105,11 @@ let g:blameLineVirtualTextFormat = '		%s'
 set pumheight=10
 
 " Lightline colorscheme
-let g:lightline = { 'colorscheme': 'icebergDark' }
+" let g:lightline = { 'colorscheme': 'gruvbox' }
 
 " Colorscheme setup
 set background=dark
-colorscheme iceberg
+colorscheme gruvbox
 
 nnoremap <SPACE> <Nop>
 let mapleader = " "
