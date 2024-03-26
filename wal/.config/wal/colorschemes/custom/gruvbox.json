@@ -2,7 +2,7 @@
     "alpha": "100",
 
     "special": {
-        "background": "#33282828",
+        "background": "#282828",
         "foreground": "#ebdbb2",
         "cursor": "#ebdbb2"
     },
