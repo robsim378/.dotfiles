@@ -105,11 +105,11 @@ let g:blameLineVirtualTextFormat = '		%s'
 set pumheight=10
 
 " Lightline colorscheme
-" let g:lightline = { 'colorscheme': 'gruvbox' }
+let g:lightline = { 'colorscheme': 'icebergDark' }
 
 " Colorscheme setup
 set background=dark
-colorscheme gruvbox
+colorscheme iceberg
 
 nnoremap <SPACE> <Nop>
 let mapleader = " "
