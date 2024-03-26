@@ -52,7 +52,7 @@ function preview {
 
 ##### Dotfile symlink creation #####
 alias dotfiles_link='stow --adopt -vt ~ *'
-alias dotfiles_install='stow /*'
+alias dotfiles_install='stow */'
 
 ##### Carleton University stuff #####
 alias cuconnect='OPENSSL_CONF=$HOME/.config/openssl/openssl.conf openconnect-sso --server cuvpn.carleton.ca/mfa'
