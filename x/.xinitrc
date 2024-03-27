@@ -42,6 +42,6 @@ picom &
 # xmodmap ~/.Xmodmap
 xbindkeys
 # exec i3
-wal -R
+wal -R &
 
 exec bspwm
