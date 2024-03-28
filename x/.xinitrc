@@ -37,6 +37,9 @@ fi
 # Set default cursor
 xsetroot -cursor_name left_ptr
 
+# Set keyboard repeat delay. First number is delay, second is repeat rate.
+xset r rate 175 30
+
 ~/.fehbg &
 picom &
 # xmodmap ~/.Xmodmap
