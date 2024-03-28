@@ -5,7 +5,7 @@ alias lla='eza -algF --group-directories-first --time-style=long-iso --git'
 alias la='eza -agF --group-directories-first --time-style=long-iso --git'
 
 ##### Skip all prompts when using yay #####
-alias yay='yay --answerdiff=None --answeredit=None'
+alias yay='yay -Syu --answerdiff=None --answeredit=None --cleanafter'
 
 ##### Copy pwd #####
 alias cppwd='pwd | xclip -selection c'
