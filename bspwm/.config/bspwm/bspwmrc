@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
@@ -37,8 +37,9 @@ flameshot &
 dunst &
 spotify &
 discord &
-$HOME/.config/polybar/shapes/launch.sh &
+# The sleep is needed to prevent polybar from loading before bspwm, causing problems.
+(sleep 0.5;$HOME/.config/polybar/shapes/launch.sh) &
 
-# Focus desktop 10, then 1. This is needed default 10 10 instead of 9 for my side monitor.
+# Focus desktop 10, then 1. This is needed to default to 10 instead of 10 for my side monitor.
 bspc desktop -f 10
 bspc desktop -f 1
