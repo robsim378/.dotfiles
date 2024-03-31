@@ -28,7 +28,7 @@ bspc config	ignore_ewmh_focus		true
 # Rules for specific programs
 bspc rule -a discord desktop='^10'
 bspc rule -a obsidian desktop='^9'
-bspc rule -a Spotify desktop='^10' follow=false
+#bspc rule -a Spotify desktop='^10' follow=false
 # TODO
 
 # Startup background apps and default apps
