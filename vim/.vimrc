@@ -77,4 +77,14 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+" Make j and k respect wrapped lines
+nnoremap j gj
+nnoremap gj j
+nnoremap k gk
+nnoremap gk k
+vnoremap j gj
+vnoremap gj j
+vnoremap k gk
+vnoremap gk k
+
 " }}}
